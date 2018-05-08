@@ -10,7 +10,7 @@ export class HomePage {
   url: any;
   constructor(private sanitize: DomSanitizer) {}
   urlpaste(){
-    this.url = "http://picads.in/";
+    this.url = "https://redart.co.uk/";
     return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
   }
 }
