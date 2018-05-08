@@ -1,0 +1,8 @@
+{
+  "name": "redart",
+  "app_id": "4df61cbd",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
