@@ -13,7 +13,7 @@ export class HomePage {
   constructor(public navCtrl: NavController,public iab: InAppBrowser /* 2 */) {}
 ngOnInit(){
 
-    const browser = this.iab.create('https://google.com/','_self',{location:'no'}); /*3*/
+    const browser = this.iab.create('https://redart.co.uk/','_self',{location:'no'}); /*3*/
 
 }
 }
