@@ -25,6 +25,7 @@ export class MyApp {
         //   alert("are sure");
         // }
         window.history.back();
+		});
     });
   }
 }
