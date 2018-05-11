@@ -17,7 +17,18 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-	   
+	   platform.registerBackButtonAction(() => {
+        // if(this.nav.canGoBack()){
+        //   alert("back");
+        //   window.history.back();
+        // }else{
+        //   alert("are sure");
+        // }
+        window.history.back();
+        
+		
+      });
+	  
     });
   }
 }

@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController  } from 'ionic-angular';
 import { DomSanitizer } from '@angular/platform-browser';
-import { InAppBrowser } from '@ionic-native/in-app-browser'; /* 1 */
-
 
 @Component({
   selector: 'page-home',
@@ -10,10 +7,10 @@ import { InAppBrowser } from '@ionic-native/in-app-browser'; /* 1 */
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController,public iab: InAppBrowser /* 2 */) {}
-ngOnInit(){
-
-    const browser = this.iab.create('https://redart.co.uk/','_self',{location:'no'}); /*3*/
-
-}
+  url: any;
+  constructor(private sanitize: DomSanitizer) {}
+  urlpaste(){
+    this.url = "https://redart.co.uk/";
+    return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
+  }
 }
